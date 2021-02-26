@@ -1,11 +1,13 @@
 {
+  "homepage": "http://dlamslo8.github.io/blog",
   "name": "blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export && gh-pages -d out"
   },
   "dependencies": {
     "next": "10.0.7",
